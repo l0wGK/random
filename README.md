@@ -1,34 +1,34 @@
 # What is this?
 
-> Randomly provides the quickest and easiest random generated results.
+> FastRand provides the quickest and easiest random generated results.
 
 This package is random and generates random results quickly.🎲
 
 # Installation
 
-`npm install randomly --save`
+`npm install fastrand --save`
 
 # Usage
 
 ```
-const randomly = require('randomly');
+const fastrand = require('fastrand');
 
 // Generate a random integer
-randomly.int(maximum, minimum) // returns an integer between [ maximum, minimum ]
+fastrand.int(maximum, minimum) // returns an integer between [ maximum, minimum ]
 
 // Generate a random float
-randomly.float(maximum, minimum) // returns a float between [ maximum, minimum ]
+fastrand.float(maximum, minimum) // returns a float between [ maximum, minimum ]
 
 // Generate boolean
-randomly.boolean() // returns [ true, false ]
+fastrand.boolean() // returns [ true, false ]
 
 // Higher lower
-randomly.chance(percentage) // returns [ true, false ] (Returns true if below or equals to percentage)
+fastrand.chance(percentage) // returns [ true, false ] (Returns true if below or equals to percentage)
 ```
 
 #### int
 
-Usage: `randomly.int(maximum, minimum)`
+Usage: `fastrand.int(maximum, minimum)`
 Returns an integer between maximum and minimum.
 
 * `maximum` integer (optional, default: `1`)
@@ -36,7 +36,7 @@ Returns an integer between maximum and minimum.
 
 #### float
 
-Usage: `randomly.float(maximum, minimum)`
+Usage: `fastrand.float(maximum, minimum)`
 Returns a float between maximum and minimum.
 
 * `maximum` float (optional, default: `1`)
@@ -44,12 +44,12 @@ Returns a float between maximum and minimum.
 
 #### boolean
 
-Usage: `randomly.boolean()`
+Usage: `fastrand.boolean()`
 Returns true or false.
 
 #### chance
 
-Usage: `randomly.chace(percentage)`
+Usage: `fastrand.chace(percentage)`
 Returns true or false.
 
 * `percentage` integer (optional, default: `50`)
