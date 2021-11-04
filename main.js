@@ -51,10 +51,14 @@ function rng(length) {
     var result = "";
     for (var i = 0; i < length; i++) {
         var random = int(numbers.length - 1,0);
-        console.log(random + " " + numbers.charAt(random));
         result += numbers.charAt(random);
     }
     return parseInt(result);
 }
 
-module.exports = { int, float, boolean, chance, rng };
+function dice() {
+    var result = int(6,1);
+    return result;
+}
+
+module.exports = { int, float, boolean, chance, rng, dice };
