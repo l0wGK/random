@@ -29,6 +29,7 @@ fastrand.chance(percentage) // returns [ true, false ] (Returns true if below or
 #### int
 
 Usage: `fastrand.int(maximum, minimum)`
+
 Returns an integer between maximum and minimum.
 
 * `maximum` integer (optional, default: `1`)
@@ -37,6 +38,7 @@ Returns an integer between maximum and minimum.
 #### float
 
 Usage: `fastrand.float(maximum, minimum)`
+
 Returns a float between maximum and minimum.
 
 * `maximum` float (optional, default: `1`)
@@ -45,11 +47,21 @@ Returns a float between maximum and minimum.
 #### boolean
 
 Usage: `fastrand.boolean()`
+
 Returns true or false.
 
 #### chance
 
-Usage: `fastrand.chace(percentage)`
+Usage: `fastrand.chance(percentage)`
+
 Returns true or false.
 
 * `percentage` integer (optional, default: `50`)
+
+### rng
+
+Usage: `fastrand.rng(length)`
+
+Returns a number with a length of `length`.
+
+* `length` integer (optional, default: 6, maximum: 15)

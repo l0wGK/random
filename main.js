@@ -41,4 +41,20 @@ function chance(percentage) {
     return result;
 }
 
-module.exports = { int, float, boolean, chance };
+/**
+ * 
+ * @param {Int16Array} length
+ */
+function rng(length) {
+    length = length  && length < 16 ? length : 6;
+    var numbers = "0123456789";
+    var result = "";
+    for (var i = 0; i < length; i++) {
+        var random = int(numbers.length - 1,0);
+        console.log(random + " " + numbers.charAt(random));
+        result += numbers.charAt(random);
+    }
+    return parseInt(result);
+}
+
+module.exports = { int, float, boolean, chance, rng };
