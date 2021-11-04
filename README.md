@@ -26,7 +26,7 @@ randomly.boolean() // returns [ true, false ]
 randomly.chance(percentage) // returns [ true, false ] (Returns true if below or equals to percentage)
 ```
 
-### int
+#### int
 
 Usage: `randomly.int(maximum, minimum)`
 Returns an integer between maximum and minimum.
@@ -34,7 +34,7 @@ Returns an integer between maximum and minimum.
 * `maximum` integer (optional, default: `1`)
 * `minimum` integer (optional, default: `0`)
 
-## float
+#### float
 
 Usage: `randomly.float(maximum, minimum)`
 Returns a float between maximum and minimum.
@@ -42,12 +42,12 @@ Returns a float between maximum and minimum.
 * `maximum` float (optional, default: `1`)
 * `minimum` float (optional, default: `0`)
 
-## boolean
+#### boolean
 
 Usage: `randomly.boolean()`
 Returns true or false.
 
-## chance
+#### chance
 
 Usage: `randomly.chace(percentage)`
 Returns true or false.
