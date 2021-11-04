@@ -66,8 +66,8 @@ Returns a number with a length of `length`.
 
 * `length` integer (optional, default: 6, maximum: 15)
 
-### dice
+### die
 
-Usage: `fastrand.dice()`
+Usage: `fastrand.die()`
 
-Rolls a dice and returns the value.
+Rolls a die and returns the value.
