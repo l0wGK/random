@@ -40,3 +40,5 @@ function chance(percentage) {
     var result = int(100,0) <= percentage ? true : false;
     return result;
 }
+
+module.exports = { int, float, boolean, chance };
